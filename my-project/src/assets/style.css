@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(87, 87, 155);
+}
+.container {
+    width: 450px;
+    margin: 60px auto 0px;
+    border: 15px solid rgb(24, 23, 23);
+    height: 850px;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 40px;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+    width: 0;
+  }
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    border-bottom: 3px solid rgb(24, 23, 23);
+}
+
+.header-title {
+    font-size: 35px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card__wrapper {
+    height: 150px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__info-img {
+    width: 45px;
+    height: 45px;
+}
+
+.card__header-info, .card__header-price {
+    display: flex;
+    align-items: center;
+}
+
+.bitcoin-name {
+    font-size: 21px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 10px;
+}
+
+.card__footer-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.price, .daily_price, .weekly-price {
+    font-size: 21px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.daily_price span, .weekly-price span {
+    color: rgb(86, 141, 31);
+}
